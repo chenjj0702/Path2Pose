@@ -28,5 +28,5 @@ We train the Path-to-Pose model with the training set of DLPose dataset and gene
 
 ### 2. long pose sequence
 <p align="left">
-    <img src="https://github.com/chenjj0702/Path2Pose/blob/main/images/long1.gif" width="200"\>        <img src="[../Path2Pose/images/](https://github.com/chenjj0702/Path2Pose/blob/main/images/)long2.gif" width="200"\>
+    <img src="https://github.com/chenjj0702/Path2Pose/blob/main/images/long1.gif" width="200"\>        <img src="https://github.com/chenjj0702/Path2Pose/blob/main/images/long2.gif" width="200"\>
 </p>
