@@ -5,7 +5,7 @@ The Path2Pose model is an end-to-end deep generative model that synthesize motio
 We constructed a large-scale dynamic pose dataset for drosophila larvae, DLPose, for the Path2Pose mode training. The dataset collected vidoes of 51 drosophila larvae with the total length of 5.1 hours. The pose data is estimated by the deep neural network and subsequently refined artifically.
 
 <p align="left">
-    <img src="../Path2Pose/images/dataset1.gif" width="200"\>  <img src="../Path2Pose/images/dataset2.gif" width="279"\>
+    <img src="https://github.com/chenjj0702/Path2Pose/blob/main/images/dataset1.gif" width="200"\>  <img src="https://github.com/chenjj0702/Path2Pose/blob/main/images/dataset2.gif" width="279"\>
 </p>
 
 ## Execution
@@ -23,9 +23,10 @@ python main.py --mode recursive --load_model ../results/train/AttnCnNet/model/ep
 We train the Path-to-Pose model with the training set of DLPose dataset and generate the long pose sequecne with the test set. The example pose sequences are concatenated with 4 short sequences.
 ### 1. short pose sequence
 <p align="left">
-    <img src="../Path2Pose/images/pose1.gif" width="200"\>        <img src="../Path2Pose/images/pose2.gif" width="275"\>
+    <img src="https://github.com/chenjj0702/Path2Pose/blob/main/images/pose1.gif" width="200"\>        <img src="https://github.com/chenjj0702/Path2Pose/blob/main/images/pose2.gif" width="275"\>
 </p>
+
 ### 2. long pose sequence
 <p align="left">
-    <img src="../Path2Pose/images/long1.gif" width="200"\>        <img src="../Path2Pose/images/long2.gif" width="200"\>
+    <img src="https://github.com/chenjj0702/Path2Pose/blob/main/images/long1.gif" width="200"\>        <img src="[../Path2Pose/images/](https://github.com/chenjj0702/Path2Pose/blob/main/images/)long2.gif" width="200"\>
 </p>
