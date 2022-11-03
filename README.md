@@ -4,6 +4,8 @@ The Path2Pose model is an end-to-end deep generative model that synthesize motio
 ## Dataset
 We constructed a large-scale dynamic pose dataset for drosophila larvae, DLPose, for the Path2Pose mode training. The dataset collected vidoes of 51 drosophila larvae with the total length of 5.1 hours. The pose data is estimated by the deep neural network and subsequently refined artifically.
 
+The dataset is availiable at https://drive.google.com/drive/folders/1-oOVhZz1lYgQ-19T_ANKbhEx8Z8ELQB1?usp=sharing.
+
 <p align="left">
     <img src="https://github.com/chenjj0702/Path2Pose/blob/main/images/dataset1.gif" width="200"\>  <img src="https://github.com/chenjj0702/Path2Pose/blob/main/images/dataset2.gif" width="279"\>
 </p>
