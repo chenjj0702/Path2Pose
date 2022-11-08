@@ -18,7 +18,11 @@ pip install -r requirements.txt
 ```
 
 ## Execution
+```
 cd ./code/path2pose
+```
+
+The long pose sequences are synthesized in two steps. First, we train the Path2Pose model to generate the fixed-length short sequence given the initial poses and the guiding path. Secondly, the well-trained model is used to synthesized the long sequence by generating and joining short sequences recursively.
 
 ### 1. train
 Train the Path2Pose model to synthesize fixed-length pose sequnces
