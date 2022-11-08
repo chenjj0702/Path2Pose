@@ -10,6 +10,13 @@ The dataset is availiable at https://drive.google.com/drive/folders/1-oOVhZz1lYg
     <img src="https://github.com/chenjj0702/Path2Pose/blob/main/images/dataset1.gif" width="200"\>  <img src="https://github.com/chenjj0702/Path2Pose/blob/main/images/dataset2.gif" width="279"\>
 </p>
 
+
+## Dependecies
+To install all the dependencies quickly and easily you should use pip
+```
+pip install -r requirements.txt
+```
+
 ## Execution
 cd ./code/path2pose
 
