@@ -18,20 +18,25 @@ pip install -r requirements.txt
 ```
 
 ## Execution
+
+The long pose sequences are synthesized in two steps. First, we train the Path2Pose model to generate the fixed-length short sequence given the initial poses and the guiding path. Secondly, the well-trained model is used to synthesized the long sequence by generating and joining short sequences recursively.
 ```
 cd ./code/path2pose
 ```
-
-The long pose sequences are synthesized in two steps. First, we train the Path2Pose model to generate the fixed-length short sequence given the initial poses and the guiding path. Secondly, the well-trained model is used to synthesized the long sequence by generating and joining short sequences recursively.
-
-### 1. train
-Train the Path2Pose model to synthesize fixed-length pose sequnces
-
+### 1. train and test
+- Train the Path2Pose model to synthesize fixed-length pose sequnces
+```
 python main.py --mode train --save_dir ../results/train/ --train_npz ../database/public_larva_refine_pose_head_enh4_win40_step10_test1000.npz
-### 2. test 
+```
+- test 
+```
 python main.py --mode test --load_model ../results/train/AttnCnNet/model/epoch_20000.pt --train_npz ../database/public_larva_refine_pose_head_enh4_win40_step10_test1000.npz
-### 3. synthesize long pose sequence
+```
+### 2. synthesize long pose sequence
+```
 python main.py --mode recursive --load_model ../results/train/AttnCnNet/model/epoch_20000.pt --recursive_npz ../database/recursive_public.npz
+```
+
 ## Examples
 We train the Path-to-Pose model with the training set of DLPose dataset and generate the long pose sequecne with the test set. The example pose sequences are concatenated with 4 short sequences.
 ### 1. short pose sequence
